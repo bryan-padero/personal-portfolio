@@ -33,7 +33,7 @@ img {
 ==================================== */
 
 /*************************************************
-***************** Layout Container ***************
+***************** Main Content Layout ***************
 *************************************************/
 
 .container {
@@ -53,16 +53,6 @@ img {
   font-size: 1em;
 }
 
-.main-header {
-  margin-bottom: 50px;
-}
-
-.main-footer {
-  margin: 0 auto;
-  width: 90%;
-  padding-top: 50px;
-}
-
 .portfolio-images {
   width: 90%;
 }
@@ -78,8 +68,12 @@ img {
 }
 
 /*************************************************
-******************* Navigation *******************
+****************** Header Layout *****************
 *************************************************/
+
+.main-header {
+  margin-bottom: 50px;
+}
 
 .name {
   margin-top: 0;
@@ -135,8 +129,12 @@ img {
 }
 
 .main-footer {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 50px;
 	position: relative;
 }
+
 
 .main-footer p {
   padding-bottom: 10px;
@@ -167,15 +165,24 @@ img {
 	display: none;
 }
 
+/*************************************************
+******************** Clearfix ********************
+*************************************************/
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 /* =================================
   					Media Queries
 ==================================== */
 
 @media (min-width: 768px) {
 
-	/*************************************************
-	*****************  Header Layout *****************
-	*************************************************/
+/*************************************************
+*****************  Header Layout *****************
+*************************************************/
 
 	.h2-portfolio{
 		clear:both;
@@ -212,14 +219,17 @@ img {
 	}
 
 	/*************************************************
-	***************  Container Layout ****************
+	**************** Main Content Layout *************
 	*************************************************/
 
 	.container{
 		width: 90%;
+		max-width: 768px;
 	}
 
-	.first-portfolio {
+	.first-portfolio,
+	.third-portfolio,
+	.fifth-portfolio {
 		float: left;
 		width: 50%;
 	}
@@ -232,20 +242,22 @@ img {
 		font-size: 16px;
 	}
 
-	.second-portfolio{
+	.second-portfolio,
+	.fourth-portfolio,
+	.sixth-portfolio{
 		float: right;
 		width: 50%;
 	}
 
-	/*************************************************
-	***************** Footer Layout ******************
-	*************************************************/
-
+/*************************************************
+***************** Footer Layout ******************
+*************************************************/
 	.contact {
 		font-size: 14px;
 		padding-bottom: 30px;
 		padding-top: 50px;
 	}
+
 
 	.email,
 	.phone,
@@ -270,30 +282,27 @@ img {
 		padding-left: 15px;
 		font-size: 14px;
 		font-weight: normal;
+		z-index: 1;
 	}
 
 	.foot-student {
 		float: left;
-		font-size: 14px;
+		font-size: 15px;
 		font-weight: normal;
+		z-index: 1;
 	}
 
 	.footer-top {
 		display: none;
 	}
 
-	/*************************************************
-	******************** Clearfix **********************
-	*************************************************/
-	.clearfix::after {
-		content: "";
-		display: table;
-		clear: both;
-	}
-
 }
 
 @media (min-width: 1024px) {
+
+/*************************************************
+*****************  Header Layout *****************
+*************************************************/
 
 	.name {
 		float: left;
@@ -303,6 +312,34 @@ img {
 	.main-nav {
 		float: right;
 		font-size: 25px;
+		font-weight: bold;
 	}
 
+	/*************************************************
+	************** Main Content Layout ***************
+	*************************************************/
+
+	.h2-portfolio {
+		padding: 50px;
+	}
+
+	.container {
+		max-width: 1024px;
+	}
+
+	.first-portfolio,
+	.third-portfolio,
+	.fifth-portfolio {
+		float: left;
+		width: 33.3%;
+		height: auto;
+	}
+
+	.second-portfolio,
+	.fourth-portfolio,
+	.sixth-portfolio {
+		float: left;
+		width: 33.3%;
+		height: auto;
+	}
 }
