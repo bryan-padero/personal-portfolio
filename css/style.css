@@ -72,7 +72,7 @@ img {
 }
 
 .h2-portfolio {
-  padding-bottom: 50px;
+  padding-bottom: 15px;
   font-size: 1.2em;
 }
 
@@ -98,10 +98,11 @@ img {
 .p-profile {
   width: 90%;
   margin: 0 auto;
+	padding-bottom: 80px;
 }
 
 /*************************************************
-******************** Footer **********************
+*****************  Footer Layout *****************
 *************************************************/
 .foot-nav li {
   display: inline-block;
@@ -171,6 +172,10 @@ img {
 
 @media (min-width: 768px) {
 
+	/*************************************************
+	*****************  Header Layout *****************
+	*************************************************/
+
 	.h2-portfolio{
 		clear:both;
 		padding-top: 100px;
@@ -192,10 +197,6 @@ img {
 		font-size: 20px;
 	}
 
-	.container{
-		width: 90%;
-	}
-
 	.profile-photo {
 		float: right;
 		width: 40%;
@@ -207,6 +208,14 @@ img {
 		float: left;
 		padding-right: 1em;
 		font-size: 15px;
+	}
+
+	/*************************************************
+	***************  Container Layout ****************
+	*************************************************/
+
+	.container{
+		width: 90%;
 	}
 
 	.first-portfolio {
@@ -227,13 +236,20 @@ img {
 		width: 50%;
 	}
 
-	.main-footer {
-	}
+	/*************************************************
+	***************** Footer Layout ******************
+	*************************************************/
 
 	.contact {
 		font-size: 14px;
 		padding-bottom: 30px;
 		padding-top: 50px;
+	}
+
+	.email,
+	.phone,
+	span {
+		font-size: 16px;
 	}
 
 	.main-footer p {
@@ -250,6 +266,7 @@ img {
 		float: right;
 		display: inline-block;
 		padding-bottom: 5px;
+		padding-left: 15px;
 		font-size: 14px;
 		font-weight: normal;
 	}
