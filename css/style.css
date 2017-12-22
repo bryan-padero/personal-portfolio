@@ -7,8 +7,8 @@ box-sizing: border-box;
 
 body {
 	line-height: 1.6;
-	background-color: rgba(128, 128, 128, 0.2);
-	font-family: sans-serif;
+	background-color: rgba(128, 128, 128, 0.3);
+	font-family: 'Raleway', sans-serif;
 	text-align: center;
 	color: #696969;
 }
@@ -55,6 +55,7 @@ img {
 
 .portfolio-images {
   width: 90%;
+	box-shadow: 3px 3px 10px 0 #696969;
 }
 
 .profile-photo {
@@ -78,11 +79,20 @@ img {
 .name {
   margin-top: 0;
   font-size: 2em;
+	font-family: 'Lobster' , 'Raleway' , sans-serif;
+	letter-spacing: 1.5px;
 }
 
 .main-nav li {
   font-size: 1.0em;
   padding-bottom: 20px;
+}
+
+.main-nav a:hover,
+.foot-nav a:hover,
+.foot-student a:hover,
+.portfolio-links:hover {
+	color: black;
 }
 
 .main-nav ul,
@@ -191,18 +201,23 @@ img {
 	}
 
 	.main-header {
-		margin-bottom: 30px;
+		margin-bottom: 70px;
 	}
 
 	.main-nav li{
 		display: inline-block;
 		padding: 10px 15px 30px 15px;
-		font-size: 12px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+
+	.main-nav ul {
+		border-bottom: 1px solid rgba(128, 128, 128, 0.3);
 	}
 
 	.name {
 		padding-top: 30px;
-		font-size: 20px;
+		font-size: 30px;
 	}
 
 	.profile-photo {
@@ -215,7 +230,7 @@ img {
 		text-align: left;
 		float: left;
 		padding-right: 1em;
-		font-size: 15px;
+		font-size: 16px;
 	}
 
 	/*************************************************
@@ -235,7 +250,7 @@ img {
 	}
 
 	.p-page {
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.title {
@@ -244,7 +259,7 @@ img {
 
 	.second-portfolio,
 	.fourth-portfolio,
-	.sixth-portfolio{
+	.sixth-portfolio {
 		float: right;
 		width: 50%;
 	}
@@ -281,15 +296,14 @@ img {
 		padding-bottom: 5px;
 		padding-left: 15px;
 		font-size: 14px;
-		font-weight: normal;
 		z-index: 1;
 	}
 
 	.foot-student {
 		float: left;
 		font-size: 15px;
-		font-weight: normal;
 		z-index: 1;
+		font-weight: bold;
 	}
 
 	.footer-top {
@@ -306,13 +320,21 @@ img {
 
 	.name {
 		float: left;
-		padding-top: 25px;
+		padding-top: 15px;
 	}
 
 	.main-nav {
 		float: right;
-		font-size: 25px;
-		font-weight: bold;
+		height: 80px;
+	}
+
+	.main-nav ul {
+		border-bottom: 0;
+	}
+
+	.header-container {
+		border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+		height: 80px;
 	}
 
 	/*************************************************
@@ -342,4 +364,14 @@ img {
 		width: 33.3%;
 		height: auto;
 	}
+
+	/*************************************************
+	*************** Main Footer Layout ***************
+	*************************************************/
+
+	.foot-nav a {
+		font-weight: bold;
+		font-size: 14px;
+	}
+
 }
