@@ -264,6 +264,11 @@ img {
 		width: 50%;
 	}
 
+	.first-row-container,
+	.second-row-container,
+	.third-row-container {
+		display: inline-block;
+	}
 /*************************************************
 ***************** Footer Layout ******************
 *************************************************/
@@ -363,6 +368,12 @@ img {
 		float: left;
 		width: 33.3%;
 		height: auto;
+	}
+
+	.first-row-container,
+	.second-row-container,
+	.third-row-container {
+		display: block;
 	}
 
 	/*************************************************
